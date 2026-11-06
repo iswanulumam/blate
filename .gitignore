@@ -1,0 +1,14 @@
+# Build output
+/target/
+
+# Local environment and credentials
+.env
+.env.*
+*.pem
+*.key
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+*.swp
