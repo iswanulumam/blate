@@ -9,3 +9,4 @@ pub mod error;
 pub mod process;
 pub mod procfs;
 pub mod sanitize;
+pub mod scan;
