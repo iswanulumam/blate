@@ -1,0 +1,22 @@
+name: Feature request
+description: Propose new behavior or an agent signature.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the situation on the host, not only the proposed solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: security
+    attributes:
+      label: Linux behavior and security considerations
+      description: Required privileges, race conditions, and how the result could be verified or could fail.
