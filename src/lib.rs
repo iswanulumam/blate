@@ -4,6 +4,7 @@
 //! through Linux procfs and never changes the state of the host. See
 //! `docs/ARCHITECTURE.md` for the design and its limits.
 
+pub mod classify;
 pub mod error;
 pub mod process;
 pub mod procfs;
