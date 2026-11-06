@@ -5,8 +5,10 @@
 //! `docs/ARCHITECTURE.md` for the design and its limits.
 
 pub mod classify;
+pub mod cli;
 pub mod error;
 pub mod process;
 pub mod procfs;
+pub mod render;
 pub mod sanitize;
 pub mod scan;
