@@ -1,0 +1,21 @@
+[package]
+name = "blate"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.93"
+description = "Host-level protection and containment for autonomous agents."
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["security", "linux", "agents", "procfs", "containment"]
+categories = ["command-line-utilities", "os::linux-apis"]
+# Remove once the crate name and first release have been decided deliberately.
+publish = false
+
+[dependencies]
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
+
+[profile.release]
+overflow-checks = true

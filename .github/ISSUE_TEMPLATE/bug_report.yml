@@ -1,0 +1,29 @@
+name: Bug report
+description: Report incorrect behavior. Do not use this for security vulnerabilities; see SECURITY.md.
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Output of `blate --version` and `uname -a`, the distribution, whether Blate ran as root, and whether it ran in a container.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Remove anything sensitive first. Blate's redaction is best effort, so command lines may still contain secrets.
+      render: text
